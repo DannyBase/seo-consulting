@@ -1,0 +1,94 @@
+@use '../../utils' as *;
+
+/* Section Title Style One */
+
+.section-title__one-title {
+    font-size: 44px;
+    line-height: 54px;
+    font-weight: 700;
+    @media #{$md} {
+        font-size: 36px;
+        line-height: 54px;
+    }
+    @media #{$sm} {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    @media #{$xs} {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+.section-title__one-tagline {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.section-title__one-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+
+/* Section Title Style Two */
+
+.section-title__two-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+    @media #{$lg} {
+        font-size: 36px;
+        line-height: 54px;
+    }
+    @media #{$md} {
+        font-size: 36px;
+        line-height: 54px;
+    }
+    @media #{$sm} {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    @media #{$xs} {
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+
+/* Section Title Style Three */
+
+.section-title__three-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+.section-title__three {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.section-title__three-tagline {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.section-title__column-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d__column-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

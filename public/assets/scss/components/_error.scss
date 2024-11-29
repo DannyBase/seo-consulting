@@ -1,0 +1,173 @@
+@use '../utils' as *;
+.error-page {
+    position: relative;
+    overflow: hidden;
+    .error-page__animation1 {
+        position: absolute;
+        top: 10%;
+        left: 8%;
+        animation: rrdevstranslateY2 6s ease-in-out 0.1s forwards infinite alternate;
+    }
+    .error-page__animation2 {
+        position: absolute;
+        top: 30%;
+        left: 21%;
+        animation: rrdevsrotate 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$sm} {
+            left: 12%;
+        }
+        @media #{$xs} {
+            top: 15%;
+        }
+    }
+    .error-page__animation3 {
+        position: absolute;
+        top: 27%;
+        left: 60%;
+        animation: rrdevsrotate 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$xxl} {
+            top: 16%;
+        }
+        @media #{$xl} {
+            top: 16%;
+        }
+        @media #{$xs} {
+            top: 18%;
+        }
+    }
+    .error-page__animation4 {
+        position: absolute;
+        top: 19%;
+        right: 19%;
+        animation: rrdevsleftright 6s ease-in-out 0.1s forwards infinite alternate;
+    }
+    .error-page__img1 {
+        position: absolute;
+        top: 0;
+        @media #{$xl} {
+            left: -11%;
+        }
+        @media #{$lg} {
+            left: -18%;
+        }
+        @media #{$md} {
+            display: none;
+        }
+        @media #{$sm} {
+            display: none;
+        }
+        @media #{$xs} {
+            display: none;
+        }
+    }
+    .error-page__img2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media #{$lg} {
+            right: -5%;
+        }
+        @media #{$md} {
+            display: none;
+        }
+        @media #{$sm} {
+            display: none;
+        }
+        @media #{$xs} {
+            display: none;
+        }
+    }
+    .error-page__content {
+        h1 {
+            color: #0B1728;
+            font-family: $montserrat;
+            font-size: 200px;
+            font-weight: 700;
+            line-height: normal;
+            @media #{$xs} {
+                font-size: 110px;
+            }
+        }
+        h2 {
+            color: #0B1728;
+            font-family: $montserrat;
+            font-size: 54px;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 34px;
+            @media #{$lg} {
+                font-size: 40px;
+            }
+            @media #{$xs} {
+                font-size: 40px;
+            }
+        }
+        p {
+            color: rgba(11, 23, 40, 0.6);
+            font-family: $montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            margin-bottom: 43px;
+        }
+        a {
+            display: inline-block;
+            color: #fff;
+            font-family: $montserrat;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: normal;
+            background-color: $theme-secondary;
+            padding: 19px 30px;
+            i {
+                margin-right: 9px;
+            }
+            &:before {
+                background-color: $theme-primary;
+            }
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
+
+.page-header .page-header__bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, #F1BFEC -0.24%, #BAF2C6 99.96%);
+    filter: blur(300px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: -1;
+    opacity: 1;
+}
+
+.page-header .page-header__bg::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #F8F8F8;
+    opacity: 0.75;
+}
+
+.page-header .page-header__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}

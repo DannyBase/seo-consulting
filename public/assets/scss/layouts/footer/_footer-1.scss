@@ -1,0 +1,407 @@
+@use '../../utils' as *;
+.footer-style-1 {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    &__animation1 {
+        position: absolute;
+        top: 0;
+        left: -3%;
+        @media #{$xxl} {
+            left: -35%;
+        }
+        @media #{$xl} {
+            left: -100px;
+        }
+        @media #{$lg} {
+            left: -9%;
+        }
+        @media #{$md} {
+            left: -90px;
+        }
+        @media #{$sm} {
+            display: none;
+        }
+        @media #{$xs} {
+            display: none;
+        }
+    }
+    &__animation2 {
+        position: absolute;
+        top: 29%;
+        left: 32%;
+        animation: rrdevsrotate 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$xxl} {
+            top: 26%;
+            left: 27%;
+        }
+        @media #{$xl} {
+            top: 29%;
+            left: 28%;
+        }
+        @media #{$lg} {
+            left: 30%;
+        }
+        @media #{$sm} {
+            display: none;
+        }
+        @media #{$xs} {
+            display: none;
+        }
+    }
+    &__animation3 {
+        position: absolute;
+        left: 7%;
+        bottom: 30%;
+        animation: rrdevsrotate 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$xl} {
+            left: 2%;
+            bottom: 40%;
+        }
+        @media #{$lg} {
+            left: 3%;
+            bottom: 40%;
+        }
+        @media #{$md} {
+            left: 5%;
+            bottom: 18%;
+        }
+        @media #{$sm} {
+            display: none;
+        }
+        @media #{$xs} {
+            display: none;
+        }
+    }
+    &__animation4 {
+        position: absolute;
+        right: 10%;
+        bottom: 40px;
+        animation: rrdevsrotate 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$xxl} {
+            right: 3%;
+            bottom: 196px;
+        }
+        @media #{$xl} {
+            right: 5%;
+            bottom: 67px;
+        }
+        @media #{$lg} {
+            right: 6%;
+            bottom: 70px;
+        }
+        @media #{$md} {
+            right: 2%;
+            bottom: 84px;
+        }
+        @media #{$sm} {
+            display: none;
+        }
+        @media #{$xs} {
+            display: none;
+        }
+    }
+    &__animation5 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        @media #{$xxl} {
+            right: -70px;
+        }
+        @media #{$xl} {
+            right: -75px;
+        }
+        @media #{$lg} {
+            right: -80px;
+        }
+        @media #{$md} {
+            right: -70px;
+        }
+        @media #{$sm} {
+            display: none;
+        }
+        @media #{$xs} {
+            display: none;
+        }
+    }
+    .footer__widget {
+        &.footer-col-1 {
+            margin-right: 90px;
+            @media #{$lg} {
+                margin-right: 40px;
+            }
+            @media #{$md} {
+                margin-right: 20px;
+            }
+            @media #{$sm} {
+                margin-right: 0px;
+            }
+            @media #{$xs} {
+                margin-right: 0px;
+            }
+        }
+        &.footer-col-4 {
+            margin-left: 90px;
+            @media #{$lg} {
+                margin-left: 40px;
+            }
+            @media #{$md} {
+                margin-left: 0px;
+            }
+            @media #{$sm} {
+                margin-left: 0px;
+            }
+            @media #{$xs} {
+                margin-left: 0px;
+            }
+        }
+        .footer-widget__title {
+            font-family: $mulish;
+            color: $heading-color;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+        .footer-widget__about-text {
+            color: $heading-color;
+            font-size: 16px;
+            font-weight: 500;
+            padding-top: 27px;
+            margin-bottom: 34px;
+            opacity: 0.6;
+        }
+        .social-hvr {
+            a {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 4px;
+                color: rgba(11, 23, 40, 0.30);
+                border: 1px solid rgba(11, 23, 40, 0.10);
+                &:hover {
+                    color: #fff;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: $theme-primary;
+                    background-color: $theme-primary;
+                }
+            }
+        }
+        ul {
+            li+li {
+                margin-top: 30px;
+            }
+            li {
+                list-style: none;
+                a {
+                    position: relative;
+                    display: inline-block;
+                    color: $body-color;
+                    font-size: 15px;
+                    font-weight: 500;
+                    opacity: 0.7;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        left: auto;
+                        height: 1px;
+                        width: 0;
+                        background-color: $theme-primary;
+                        transition: 0.7s;
+                        display: inline-block;
+                        box-shadow: 0px 4px 12px rgba(1, 16, 61, 0.14);
+                        border-radius: 6px;
+                    }
+                    &:hover {
+                        color: $theme-primary;
+                        margin-left: 5px;
+                        &:after {
+                            width: 100%;
+                            right: auto;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-subscriber-form {
+            position: relative;
+            input {
+                width: 100%;
+                height: 46px;
+                flex-shrink: 0;
+                color: $theme-text-7;
+                font-family: $mulish;
+                font-size: 15px;
+                font-weight: 400;
+                padding: 0 20px;
+                padding-right: 70px;
+                border-radius: 6px;
+                border: 1px solid rgba(11, 23, 40, 0.16);
+                background: rgba(11, 23, 40, 0.04);
+                &::placeholder {
+                    color: $theme-text-10;
+                    opacity: 0.7;
+                }
+            }
+            button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 46px;
+                height: 46px;
+                border-radius: 6px;
+                background: $theme-primary;
+                color: $white;
+                outline: none;
+                border: none;
+                @include transition(.4s);
+                &:hover {
+                    box-shadow: inset 0 0 0 30px $theme-secondary;
+                    @include transition(.4s);
+                }
+            }
+        }
+    }
+    .subscriber-agreement {
+        margin-top: 25px;
+        input[type="checkbox"] {
+            width: 14px!important;
+            height: 14px!important;
+            border-radius: 2px;
+            margin: 0;
+            margin-right: 8px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+            outline: none;
+            box-shadow: none;
+            font-size: 0.8em;
+            text-align: center;
+            background-color: transparent;
+            border: 1px solid rgba(11, 23, 40, 0.20);
+            color: $theme-text-10;
+            &:checked:after {
+                content: '✔';
+                color: $theme-text-10;
+                margin: 0;
+                margin-right: 8px;
+            }
+        }
+        p {
+            color: #545D69;
+            font-family: $mulish;
+            font-size: 14px;
+            font-weight: 500;
+            display: inline-block;
+            a {
+                color: $theme-text-10;
+                font-family: $mulish;
+                font-size: 14px;
+                font-weight: 500;
+                text-decoration-line: underline;
+            }
+        }
+    }
+    .footer-bottom {
+        border-top: 1px solid rgba(42, 50, 85, 0.10);
+        padding: 27px 0;
+        .copyright p {
+            color: $theme-text-10;
+            font-family: $mulish;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 0;
+            text-align: left;
+            @media #{$xxl} {
+                text-align: left;
+            }
+            @media #{$xl} {
+                text-align: left;
+            }
+            @media #{$lg} {
+                text-align: left;
+            }
+            @media #{$md} {
+                text-align: left;
+            }
+            @media #{$sm} {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            @media #{$xs} {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+        .footer-bottom-menu {
+            text-align: right;
+            @media #{$xxl} {
+                text-align: right;
+            }
+            @media #{$xl} {
+                text-align: right;
+            }
+            @media #{$lg} {
+                text-align: right;
+            }
+            @media #{$md} {
+                text-align: right;
+            }
+            @media #{$sm} {
+                text-align: center;
+            }
+            @media #{$xs} {
+                text-align: center;
+            }
+            ul {
+                li {
+                    display: inline-block;
+                    &:after {
+                        content: "|";
+                        display: inline-block;
+                        margin: 0 15px;
+                        color: #BBC1D0;
+                    }
+                    &:last-child:after {
+                        display: none;
+                    }
+                    a {
+                        position: relative;
+                        color: #545D69;
+                        font-family: $mulish;
+                        font-size: 14px;
+                        font-weight: 500;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                            left: auto;
+                            height: 1px;
+                            width: 0;
+                            background-color: $theme-primary;
+                            transition: 0.7s;
+                            display: inline-block;
+                            box-shadow: 0px 4px 12px rgba(1, 16, 61, 0.14);
+                            border-radius: 6px;
+                        }
+                        &:hover {
+                            color: $theme-primary;
+                            &:after {
+                                width: 100%;
+                                right: auto;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

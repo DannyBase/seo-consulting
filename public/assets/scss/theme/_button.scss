@@ -1,0 +1,182 @@
+@use '../utils' as *;
+.header-btn-1 {
+    display: inline-block;
+    padding: 14px 15px;
+    border-radius: 4px;
+    background: $theme-primary;
+    color: $white;
+    font-family: $mulish;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: normal;
+    &:before {
+        background-color: $theme-secondary;
+        border-radius: 4px;
+    }
+    &:hover {
+        color: $white;
+    }
+}
+
+.header-btn-2 {
+    display: inline-block;
+    padding: 14px 15px;
+    border-radius: 4px;
+    background: $theme-secondary;
+    color: $white;
+    font-family: $mulish;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: normal;
+    &:before {
+        background-color: $theme-primary;
+        border-radius: 4px;
+    }
+    &:hover {
+        color: $white;
+    }
+}
+
+.rr-btn-style-1 {
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0%;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: block;
+        -webkit-transform-origin: right top;
+        -ms-transform-origin: right top;
+        transform-origin: right top;
+        -webkit-transform: scale(0, 1);
+        -ms-transform: scale(0, 1);
+        transform: scale(0, 1);
+        -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+        transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+        z-index: -1;
+    }
+    &:hover::before {
+        -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
+        transform-origin: left top;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+.thm-btn-2 {
+    display: inline-block;
+    color: #0B1728;
+    font-family: $montserrat;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    padding: 21px 43px;
+    border: 1px solid #0B1728;
+    &:hover {
+        border: 1px solid $theme-secondary;
+    }
+}
+
+.rr-bounce-up {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.4s linear;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.rr-bounce-up:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $theme-secondary;
+    color: #fff;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 100%;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleY(0);
+}
+
+.rr-bounce-up:hover:before {
+    transform: scaleY(1);
+}
+
+.rr-bounce-up:hover {
+    color: #fff!important;
+}
+
+.contact-btn {
+    display: inline-block;
+    width: 199px;
+    padding: 21px 41px;
+    border-radius: 160px;
+    color: #fff;
+    background: $theme-secondary;
+    border: none;
+    font-family: $montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.contact-btn.rr-bounce-up:before {
+    color: #fff;
+    background: #0B1728;
+}
+
+.social-hvr {
+    a {
+        color: #fff;
+        display: inline-block;
+        margin-right: 4px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        @include transition(.4s);
+        &:hover {
+            -webkit-transform: rotate(1turn);
+            -moz-transform: rotate(1turn);
+            transform: rotate(1turn);
+        }
+    }
+}
+
+.rr-btn-hover {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    & b {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        background-color: $theme-black;
+        border-radius: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        @include transition(.4s);
+        z-index: 1;
+    }
+    &:hover {
+        span {
+            position: relative;
+            color: #fff;
+            z-index: 2;
+        }
+        & b {
+            width: 400px;
+            height: 400px;
+            display: inline-block;
+        }
+    }
+}

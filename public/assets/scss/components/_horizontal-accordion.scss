@@ -1,0 +1,190 @@
+@use '../utils' as *;
+.horizontal-accordion {
+    .d__column-two {
+        @media #{$md} {
+            display: block;
+        }
+        @media #{$sm} {
+            display: block;
+        }
+        @media #{$xs} {
+            display: block;
+        }
+    }
+    .section-title__two-right {
+        @media #{$md} {
+            margin-top: 30px;
+        }
+        @media #{$sm} {
+            margin-top: 30px;
+        }
+        @media #{$xs} {
+            margin-top: 30px;
+        }
+    }
+}
+
+.row-custom {
+    display: flex;
+    margin: 0 -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media #{$md} {
+        padding: 0;
+    }
+    @media #{$xs} {
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.col-custom {
+    flex: 0.4;
+    width: 138px;
+    height: 546px;
+    FONT-WEIGHT: 500;
+    background: #fff;
+    padding: 50px 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    @media #{$lg} {
+        width: 80px;
+    }
+    @media #{$md} {
+        width: 60px;
+    }
+    border: 1px solid rgba(11, 23, 40, 0.14);
+    @media #{$xl} {
+        padding: 40px 40px;
+    }
+    @media #{$md} {
+        padding: 40px 25px;
+    }
+    @media #{$xs} {
+        width: 100%;
+        padding: 40px 30px;
+    }
+    &.active {
+        flex: 7;
+        & .rr-panel-item {
+            display: none;
+        }
+        & .rr-panel-item-2 {
+            opacity: 1;
+            visibility: visible;
+            transition-delay: 0.3s;
+            transition: .3s;
+        }
+    }
+}
+
+.rr-panel-content {
+    .rr-panel-title {
+        width: 500px;
+        height: 394px;
+        transform: rotate(-90deg) translate(-90px, -15px);
+        color: #0B1728;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-top: -115px;
+        @media #{$lg} {
+            transform: rotate(-90deg) translate(-90px, -41px);
+            font-size: 24px;
+        }
+        @media #{$md} {
+            transform: rotate(-90deg) translate(-90px, -48px);
+            font-size: 18px;
+        }
+    }
+}
+
+.rr-panel-content-2 {
+    .rr-panel-title-2 {
+        display: inline-block;
+        color: #fff;
+        font-family: $montserrat;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 10px 16px;
+        background: $theme-secondary;
+        margin-bottom: 30px;
+        visibility: hidden;
+        opacity: 0;
+        @include transition(.3s);
+    }
+    .rr-panel-content__img {
+        position: relative;
+        visibility: hidden;
+        opacity: 0;
+        transition-delay: 0.2s;
+        &:before {
+            content: "";
+            display: block;
+            background: linear-gradient(180deg, rgba(11, 23, 40, 0.00) 0%, #0B1728 100%);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            right: 0;
+        }
+        h3 {
+            color: #fff;
+            font-family: $montserrat;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 40px;
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            right: 0;
+            padding-left: 30px;
+            padding-right: 30px;
+            @media #{$xl} {
+                font-size: 24px;
+                line-height: 34px;
+            }
+            @media #{$md} {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            @media #{$sm} {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            @media #{$xs} {
+                font-size: 13px;
+                line-height: 28px;
+                bottom: 0;
+                left: -10px;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.col-custom.active .rr-panel-title-2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.col-custom.active .rr-panel-content__img {
+    visibility: visible;
+    opacity: 1;
+}
+
+.rr-panel-item-2 {
+    opacity: 0;
+    visibility: hidden;
+    padding: 0px 30px;
+    @media #{$xs} {
+        padding: 0px 5px;
+    }
+}

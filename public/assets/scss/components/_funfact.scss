@@ -1,0 +1,56 @@
+@use '../utils' as *;
+.counter-one__single {
+    padding: 90px 50px 102px 44px;
+    border: 1px solid rgba(11, 23, 40, 0.14);
+}
+
+.counter-one__single .text-box h3,
+.counter-one__single .text-box span {
+    display: inline-block;
+    font-family: $montserrat;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 0;
+    color: rgba(11, 23, 40, 0.2);
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(11, 23, 40, 0.2);
+    @media #{$xl} {
+        font-size: 60px;
+    }
+    @media #{$lg} {
+        font-size: 45px;
+    }
+    @media #{$xs} {
+        font-size: 60px;
+    }
+}
+
+.counter-one__text {
+    color: #0B1728;
+    text-align: right;
+    font-family: $montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 0;
+    margin-top: -13px;
+    @media #{$xl} {
+        font-size: 14px;
+    }
+    @media #{$lg} {
+        font-size: 16px;
+    }
+}
+
+.counter-one__single .icon-box {
+    margin-bottom: 44px;
+}
+
+.counter-one__single .icon-box i {
+    font-size: 64px;
+    color: #0B1728;
+}

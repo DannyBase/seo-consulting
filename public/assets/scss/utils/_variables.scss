@@ -1,0 +1,39 @@
+// Font Family
+$mulish: 'Mulish',
+sans-serif;
+$montserrat: 'Montserrat Alternates',
+sans-serif;
+// Background
+$theme-primary: #FE7919;
+$theme-secondary: #4A5FE1;
+$theme-black: #0B1728;
+$theme-gray-1: #F6F9FE;
+$theme-gray-2: #f8f8f8;
+$theme-gray-3: #F6F9FE;
+$theme-gray-4: #EFF1F3;
+$theme-black-7: rgba(11, 23, 40, 0.7);
+// Border
+$hr-border-color:#D9D9D9;
+// Text
+$white: #ffffff;
+$black: #000;
+$grey:#f9f9f9;
+$heading-color: #0B1728;
+$body-color: #0B1728;
+$theme-text-1: rgba(11, 23, 40, 0.1);
+$theme-text-2: rgba(11, 23, 40, 0.2);
+$theme-text-3: rgba(11, 23, 40, 0.3);
+$theme-text-4: rgba(11, 23, 40, 0.4);
+$theme-text-5: rgba(11, 23, 40, 0.5);
+$theme-text-6: rgba(11, 23, 40, 0.6);
+$theme-text-7: rgba(11, 23, 40, 0.7);
+$theme-text-8: rgba(11, 23, 40, 0.8);
+$theme-text-9: rgba(11, 23, 40, 0.9);
+$theme-text-10: #0B1728;
+// Responsive Variables
+$xxl: 'only screen and (min-width: 1400px) and (max-width: 1600px)';
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1400px)';
+$lg: 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xs:'(max-width: 767px)';

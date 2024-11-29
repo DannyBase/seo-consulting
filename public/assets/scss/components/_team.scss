@@ -1,0 +1,107 @@
+@use '../utils' as *;
+.team-one__single {
+    overflow: hidden;
+    .team-one__single-img {
+        position: relative;
+        img {
+            @media #{$lg} {
+                width: 100%;
+            }
+            @media #{$md} {
+                width: 100%;
+            }
+            @media #{$sm} {
+                width: 100%;
+            }
+            @media #{$xs} {
+                width: 100%;
+            }
+        }
+        .overlay-content:before {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-color: $theme-secondary;
+            opacity: .65;
+            content: "";
+            -webkit-transform: perspective(400px) rotateX(0deg) scaleY(0.5);
+            -ms-transform: perspective(400px) rotateX(0deg) scaleY(0.5);
+            transform: perspective(400px) rotateX(90deg) scaleY(0.5);
+            -webkit-transform-origin: center;
+            -ms-transform-origin: center;
+            transform-origin: center;
+            transition-delay: .1s;
+            transition-timing-function: ease-in-out;
+            transition-duration: .5s;
+            transition-property: all;
+        }
+        .social-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            transform: translateX(-100%);
+            visibility: hidden;
+            opacity: 0;
+            transition-delay: .3s;
+            transition-timing-function: ease-in-out;
+            transition-duration: .1s;
+            transition-property: all;
+            @include transition(.3s);
+            a {
+                display: block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #fff;
+                border: 1px solid rgba(255, 255, 255, 0.20);
+                background: rgba(255, 255, 255, 0.00);
+                margin-bottom: 6px;
+                &:hover {
+                    background-color: $theme-secondary;
+                    border: 1px solid $theme-secondary;
+                    transform: translateX(-5px);
+                }
+            }
+        }
+    }
+    .title-box {
+        border: 1px solid rgba(11, 23, 40, 0.14);
+        background: #FFF;
+        padding: 22px;
+        text-align: center;
+        h5 {
+            color: #1E2023;
+            font-family: $montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        span {
+            color: #1E2023;
+            font-family: $montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            opacity: 0.7;
+        }
+    }
+    &:hover {
+        .overlay-content:before {
+            -webkit-transform: perspective(400px) rotateX(0deg) scaleY(1.0);
+            -ms-transform: perspective(400px) rotateX(0deg) scaleY(1.0);
+            transform: perspective(400px) rotateX(0deg) scaleY(1.0);
+            @include transition(.3s);
+        }
+        .social-link {
+            transform: translateX(0px);
+            visibility: visible;
+            opacity: 1;
+            @include transition(.3s);
+        }
+    }
+}

@@ -1,0 +1,211 @@
+@use '../utils' as *;
+.skill-one {
+    overflow: hidden;
+    div[class^=col-] {
+        padding: 0;
+    }
+}
+
+.skill-side__left {
+    background: #F0E6E0;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    .skill__img-animation1 {
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        animation: rrdevsleftright 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$xl} {
+            top: -60px;
+            left: -60px;
+        }
+        @media #{$xs} {
+            top: -54px;
+            left: -130px;
+        }
+    }
+}
+
+.skill-side__right {
+    position: relative;
+    padding: 154px 330px 154px 125px;
+    @media #{$xxl} {
+        padding: 80px 120px 154px 110px;
+    }
+    @media #{$xl} {
+        padding: 30px 70px 120px 90px;
+    }
+    @media #{$lg} {
+        padding: 80px 120px;
+    }
+    @media #{$md} {
+        padding: 60px 125px 60px 125px;
+    }
+    @media #{$sm} {
+        padding: 80px;
+    }
+    @media #{$xs} {
+        padding: 80px 30px;
+    }
+    .skill__img-animation2 {
+        position: absolute;
+        top: 5%;
+        right: 32%;
+        animation: rrdevsleftright 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$xl} {
+            top: 1%;
+        }
+        @media #{$lg} {
+            top: 5%;
+        }
+    }
+    .skill__img-animation3 {
+        position: absolute;
+        top: 18%;
+        left: 7%;
+        animation: rrdevsrotate 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$lg} {
+            left: 4%;
+        }
+        @media #{$xs} {
+            top: 5%;
+            left: 5%;
+        }
+    }
+    .skill__img-animation4 {
+        position: absolute;
+        top: 45%;
+        right: 15%;
+        animation: rrdevsrotate 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$xxl} {
+            right: 8%;
+        }
+        @media #{$xl} {
+            top: 36%;
+            right: 10%;
+        }
+        @media #{$lg} {
+            top: 35%;
+            right: 8%;
+        }
+        @media #{$md} {
+            top: 35%;
+            right: 6%;
+        }
+        @media #{$sm} {
+            top: 32%;
+            right: 8%;
+        }
+        @media #{$xs} {
+            top: 32%;
+            right: 7%;
+        }
+    }
+    .skill__img-animation5 {
+        position: absolute;
+        bottom: 10%;
+        left: 45%;
+        animation: rrdevstranslateY2 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$xxl} {
+            bottom: 23%;
+            left: 51%;
+        }
+        @media #{$xl} {
+            bottom: 20%;
+            left: 55%;
+        }
+        @media #{$lg} {
+            left: 55%;
+            bottom: 20%;
+        }
+        @media #{$md} {
+            bottom: 15%;
+        }
+        @media #{$sm} {
+            bottom: 15%;
+            left: 57%;
+        }
+        @media #{$xs} {
+            bottom: 20%;
+            left: 85%;
+        }
+    }
+}
+
+.skill-one__progress {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.skill-one__progress-single {
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.skill-one__progress-single.mar-b0 {
+    margin-bottom: 0px;
+}
+
+.skill-one__progress-title {
+    color: #0B1728;
+    font-family: $montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.skill-one__progress .bar {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: #E3E3E3;
+    border-radius: 0px;
+    margin-bottom: 6px;
+}
+
+.skill-one__progress .bar-inner {
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 4px;
+    border-radius: 0px;
+    -webkit-transition: all 1500ms ease;
+    -ms-transition: all 1500ms ease;
+    -o-transition: all 1500ms ease;
+    -moz-transition: all 1500ms ease;
+    transition: all 1500ms ease;
+}
+
+.skill-one__progress .bar-inner.bar-bg-1 {
+    background-color: $theme-secondary;
+}
+
+.skill-one__progress .bar-inner.bar-bg-2 {
+    background-color: #E1A54A;
+}
+
+.skill-one__progress .bar-inner.bar-bg-3 {
+    background-color: #E14AB7;
+}
+
+.skill-one__progress .count-text {
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    color: #0B1728;
+    font-family: $montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
+    opacity: 1;
+}

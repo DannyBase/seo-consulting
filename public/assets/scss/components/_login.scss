@@ -1,0 +1,243 @@
+@use '../utils' as *;
+.login-page {
+    overflow: hidden;
+    height: 840px;
+    div[class^=col-] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &__animation1 {
+        position: absolute;
+        top: 34%;
+        left: 9%;
+        animation: rrdevsleftright 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$xl} {
+            left: 5%;
+        }
+        @media #{$lg} {
+            top: 30%;
+        }
+    }
+    &__animation2 {
+        position: absolute;
+        top: 18%;
+        left: 48%;
+        animation: rrdevsrotate 6s ease-in-out 0.1s forwards infinite alternate;
+    }
+    &__animation3 {
+        position: absolute;
+        bottom: 24%;
+        left: 47%;
+        animation: rrdevsrotate 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$xl} {
+            bottom: 38%;
+            left: 46%;
+        }
+        @media #{$lg} {
+            bottom: 6%;
+            left: 47%;
+        }
+        @media #{$xs} {
+            bottom: 4%;
+            left: 7%;
+        }
+    }
+    &__animation4 {
+        position: absolute;
+        top: 17%;
+        left: 2%;
+        animation: rrdevsleftright 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$xl} {
+            left: 5%;
+        }
+        @media #{$lg} {
+            left: 5%;
+        }
+    }
+    &__animation5 {
+        position: absolute;
+        left: 8%;
+        bottom: 11%;
+        animation: rrdevsrotate 6s ease-in-out 0.1s forwards infinite alternate;
+        @media #{$xl} {
+            left: 3%;
+            bottom: 16%;
+        }
+        @media #{$xs} {
+            left: 4%;
+        }
+    }
+    &__animation6 {
+        position: absolute;
+        bottom: 20%;
+    }
+    &__content {
+        padding: 95px 140px 95px 315px;
+        @media #{$xxl} {
+            padding: 95px 55px 95px 170px;
+        }
+        @media #{$xl} {
+            padding: 95px 30px 95px 90px;
+        }
+        @media #{$lg} {
+            padding: 80px;
+        }
+        @media #{$md} {
+            padding: 100px;
+        }
+        @media #{$sm} {
+            padding: 90px;
+        }
+        @media #{$xs} {
+            padding: 60px;
+        }
+        .login-page__title {
+            color: #0B1728;
+            font-family: $montserrat;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 45px;
+        }
+        span {
+            display: block;
+            color: #0B1728;
+            font-family: $montserrat;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 10px;
+            margin-bottom: 16px;
+        }
+        input {
+            color: rgba(84, 93, 105, 0.6);
+            font-family: $montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+            height: 50px;
+            width: 100%;
+            padding: 17px 22px;
+            margin-bottom: 27px;
+            border-radius: 6px;
+            border: 1px solid rgba(11, 23, 40, 0.10);
+            &::placeholder {
+                color: rgba(84, 93, 105, 0.6);
+            }
+        }
+        .login-page__password {
+            position: relative;
+            .toggle-password {
+                position: absolute;
+                top: 50%;
+                right: 19px;
+                transform: translateY(-50%);
+            }
+        }
+        .remember-password {
+            input[type="checkbox"] {
+                display: inline-block;
+                width: 14px!important;
+                height: 14px!important;
+                border-radius: 2px;
+                border: 1px solid rgba(11, 23, 40, 0.10);
+                margin-bottom: 0;
+            }
+            p {
+                display: inline-block;
+                margin-bottom: 0;
+                margin-left: 9px;
+            }
+        }
+        .login-page__btn a {
+            display: block;
+            color: #fff;
+            font-family: $montserrat;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+            padding: 19px;
+            border-radius: 6px;
+            background: $theme-secondary;
+        }
+        .alternative-login h5 {
+            position: relative;
+            color: rgba(84, 93, 105, 0.7);
+            font-family: $montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+            &:before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 43%;
+                height: 1px;
+                background-color: rgba(11, 23, 40, 0.1);
+            }
+            &:after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 43%;
+                height: 1px;
+                background-color: rgba(11, 23, 40, 0.1);
+            }
+        }
+        .login__btn {
+            a {
+                display: inline-block;
+                color: #0B1728;
+                font-family: $montserrat;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 28px;
+                padding: 12px 38px;
+                border-radius: 6px;
+                background: #EFF1F3;
+                margin-right: 2px;
+                @media #{$sm} {
+                    padding: 15px 30px;
+                }
+                @media #{$xs} {
+                    padding: 8px 13px;
+                }
+                img {
+                    margin-right: 9px;
+                }
+            }
+        }
+        .sign-up {
+            p {
+                color: #545D69;
+                text-align: center;
+                font-family: $montserrat;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: normal;
+                a {
+                    color: $theme-secondary;
+                }
+            }
+        }
+    }
+    &__img img {
+        @media #{$lg} {
+            display: none;
+        }
+        @media #{$md} {
+            display: none;
+        }
+        @media #{$sm} {
+            display: none;
+        }
+        @media #{$xs} {
+            display: none;
+        }
+    }
+}

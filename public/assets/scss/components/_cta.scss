@@ -1,0 +1,482 @@
+@use '../utils' as *;
+.cta-one {
+    &__overlay {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 205px;
+        background: #fff;
+    }
+    &__wrapper {
+        position: relative;
+        padding: 70px 150px;
+        border-radius: 20px;
+        background-color: $theme-secondary;
+        overflow: hidden;
+        @media #{$xs} {
+            padding: 70px 10px;
+            padding-bottom: 120px;
+        }
+        .cta-one__img1 {
+            position: absolute;
+            top: 24px;
+            left: 40px;
+            animation: rrdevsleftright 6s ease-in-out 0.1s forwards infinite alternate;
+        }
+        .cta-one__img2 {
+            position: absolute;
+            top: -55px;
+            right: 60px;
+            transform: rotate(340deg);
+        }
+        .cta-one__img3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: rrdevsleftright 10s ease-in-out 0.1s forwards infinite alternate;
+        }
+        .cta-one__img4 {
+            position: absolute;
+            right: 15px;
+            bottom: 0;
+            animation: rrdevsleftright 10s ease-in-out 0.1s forwards infinite alternate;
+        }
+        .cta-one__img5 {
+            position: absolute;
+            left: 9%;
+            top: 48%;
+            opacity: 0.35;
+            transform: rotate(346deg);
+            animation: rrdevsleftright 6s ease-in-out 0.1s forwards infinite alternate;
+        }
+        .cta-one__img6 {
+            position: absolute;
+            top: 25%;
+            left: 37%;
+            transform: rotate(345deg);
+            opacity: 0.9;
+            animation: rrdevsleftright 6s ease-in-out 0.1s forwards infinite alternate;
+        }
+        .cta-one__img7 {
+            position: absolute;
+            right: 12%;
+            opacity: .45;
+            animation: rrdevsleftright 5s ease-in-out 0.1s forwards infinite alternate;
+        }
+        .cta-main__img {
+            @media #{$xs} {
+                display: none;
+            }
+            animation: rrdevsanimation1 10s infinite linear alternate;
+            img {
+                transform: rotate(17deg);
+            }
+        }
+        h2 {
+            color: $white;
+            font-family: $mulish;
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 52px;
+            margin-bottom: 24px;
+            @media #{$lg} {
+                font-size: 30px;
+                line-height: 46px;
+            }
+            @media #{$md} {
+                font-size: 34px;
+                line-height: 50px;
+                margin-top: 30px;
+            }
+            @media #{$xs} {
+                font-size: 24px;
+                line-height: 42px;
+            }
+            @media #{$sm} {
+                font-size: 36px;
+                line-height: 52px;
+                margin-top: 30px;
+            }
+        }
+        p {
+            color: $white;
+            font-family: $mulish;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            margin-bottom: 32px;
+        }
+        .cta-one__wrapper-form {
+            width: 100%;
+            form {
+                position: relative;
+                width: 450px;
+                @media #{$lg} {
+                    width: 345px;
+                }
+                @media #{$md} {
+                    width: 370px;
+                }
+                @media #{$sm} {
+                    width: 390px;
+                }
+                @media #{$xs} {
+                    width: 100%;
+                }
+            }
+            input {
+                color: $theme-text-4;
+                font-family: $mulish;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: normal;
+                width: 100%;
+                height: 54px;
+                border: none;
+                border-radius: 6px;
+                padding: 22px 29px;
+                padding-right: 160px;
+                background: #fff;
+                box-shadow: 0px 1px 2px 0px rgba(11, 23, 40, 0.14);
+                &::placeholder {
+                    color: $theme-text-4;
+                }
+                @media #{$xs} {
+                    padding-right: 30px;
+                }
+            }
+            .cta-one__btn {
+                font-family: $mulish;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: normal;
+                position: absolute;
+                top: 4px;
+                right: 5px;
+                border: none;
+                padding: 14px 31px;
+                border-radius: 6px;
+                color: #fff;
+                background: #0B1728;
+                &:before {
+                    background-color: $theme-primary;
+                    border-radius: 6px;
+                }
+                &:hover {
+                    color: $white;
+                }
+                @media #{$xs} {
+                    top: 100%;
+                    left: 0;
+                    right: inherit;
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}
+
+.cta-two {
+    position: relative;
+    background-color: #090939;
+    padding: 110px 30px;
+    z-index: 1;
+    overflow: hidden;
+    @media #{$xs} {
+        padding: 110px 15px;
+    }
+}
+
+.cta-two__img {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    opacity: .12;
+}
+
+.cta-two__img1 {
+    position: absolute;
+    left: 190px;
+    bottom: 0;
+    @media #{$xxl} {
+        left: 40px;
+    }
+    @media #{$xl} {
+        left: -10px;
+        bottom: -20px;
+    }
+    @media #{$lg} {
+        left: -12%;
+    }
+    @media #{$sm} {
+        display: none;
+    }
+    @media #{$xs} {
+        display: none;
+    }
+}
+
+.cta-two__img2 {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    @media #{$xs} {
+        right: 30px;
+        bottom: -75px;
+        display: none;
+    }
+}
+
+.cta-two__img_animation3 {
+    position: absolute;
+    right: 60px;
+    bottom: 10px;
+    @media #{$xxl} {
+        right: -56px;
+        bottom: -45px;
+    }
+    @media #{$xl} {
+        bottom: -45px;
+    }
+    @media #{$lg} {
+        bottom: -40px;
+    }
+    @media #{$md} {
+        bottom: -35px;
+    }
+    @media #{$sm} {
+        bottom: -40px;
+    }
+    @media #{$xs} {
+        right: -50px;
+        bottom: -40px;
+    }
+}
+
+.cta-two__line1 {
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    animation: footer1 4s ease-in-out 0.1s forwards infinite alternate;
+    @media #{$xl} {
+        left: 7%;
+    }
+    @media #{$md} {
+        left: 4%;
+    }
+    @media #{$sm} {
+        left: 5%;
+    }
+    @media #{$xs} {
+        left: 4%;
+    }
+}
+
+.cta-two__line2 {
+    position: absolute;
+    left: 36%;
+    bottom: -28%;
+    animation: footer2 4s ease-in-out 0.1s forwards infinite alternate;
+    @media #{$md} {
+        bottom: -50%;
+    }
+    @media #{$sm} {
+        left: 20%;
+        bottom: -50%;
+    }
+    @media #{$xs} {
+        bottom: -45%;
+    }
+}
+
+.cta-two__line3 {
+    position: absolute;
+    left: 50%;
+    bottom: -55%;
+    animation: footer3 4s ease-in-out 0.1s forwards infinite alternate;
+    @media #{$xs} {
+        bottom: -48%;
+    }
+}
+
+.cta-two__line4 {
+    position: absolute;
+    left: 73.5%;
+    bottom: -25%;
+    animation: footer2 4s ease-in-out 0.1s forwards infinite alternate;
+    @media #{$xxl} {
+        bottom: -50%;
+    }
+    @media #{$xl} {
+        bottom: -50%;
+    }
+    @media #{$lg} {
+        bottom: -48%;
+    }
+    @media #{$sm} {
+        bottom: -50%;
+    }
+    @media #{$xs} {
+        bottom: -45%;
+        left: 63%;
+    }
+}
+
+.cta-two__line5 {
+    position: absolute;
+    left: 90%;
+    bottom: -5%;
+    animation: footer1 4s ease-in-out 0.1s forwards infinite alternate;
+    @media #{$xl} {
+        left: 87%;
+    }
+    @media #{$lg} {
+        left: 97%;
+    }
+    @media #{$md} {
+        left: 97%;
+    }
+    @media #{$sm} {
+        left: 96%;
+    }
+    @media #{$xs} {
+        left: 96%;
+    }
+}
+
+.cta-two__arrow1 {
+    position: absolute;
+    top: 53%;
+    left: 13%;
+    opacity: .13;
+    animation: rrdevsleftright 6s ease-in-out 0.1s forwards infinite alternate;
+    @media #{$xxl} {
+        left: 9%;
+    }
+    @media #{$xl} {
+        left: 6%;
+    }
+    @media #{$sm} {
+        top: 25%;
+        left: -5%;
+    }
+    @media #{$xs} {
+        top: 14%;
+        left: 0%;
+    }
+}
+
+.cta-two__arrow2 {
+    position: absolute;
+    top: 28%;
+    right: 16%;
+    opacity: .39;
+    animation: rrdevsrightleft 6s ease-in-out 0.1s forwards infinite alternate;
+    @media #{$xl} {
+        right: 12%;
+    }
+    @media #{$sm} {
+        right: 4%;
+    }
+}
+
+.cta-two:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 768px;
+    height: 768px;
+    border-radius: 50px;
+    background: rgba(40, 40, 142, 0.4);
+    filter: blur(185px);
+    z-index: -1;
+}
+
+.cta-two__content {
+    h2 {
+        color: #FFF;
+        font-family: $montserrat;
+        font-size: 44px;
+        font-weight: 600;
+        line-height: 54px;
+        margin-bottom: 30px;
+        @media #{$xs} {
+            font-size: 30px;
+            line-height: 50px;
+            margin-bottom: 15px;
+        }
+    }
+    p {
+        color: rgba(255, 255, 255, 0.7);
+        font-family: $montserrat;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 29px;
+    }
+    form {
+        position: relative;
+        width: 520px;
+        @media #{$lg} {
+            width: 420px;
+        }
+        @media #{$sm} {
+            width: 420px;
+        }
+        @media #{$xs} {
+            width: 100%;
+        }
+        input {
+            color: rgba(255, 255, 255, 0.7);
+            font-family: $montserrat;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            width: 520px;
+            height: 60px;
+            padding: 25px 0px 25px 29px;
+            padding-right: 160px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: rgba(255, 255, 255, 0.10);
+            box-shadow: 0px 1px 2px 0px rgba(11, 23, 40, 0.14);
+            @media #{$lg} {
+                width: 420px;
+            }
+            @media #{$sm} {
+                width: 420px;
+            }
+            @media #{$xs} {
+                width: 100%;
+            }
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 12px 29px;
+            border-radius: 160px;
+            background: $theme-secondary;
+            color: #fff;
+            border: none;
+            margin: 6px 8px;
+            @media #{$xs} {
+                top: 100%;
+                right: inherit;
+                border: none;
+                left: 0;
+                margin-top: 10px;
+            }
+            &:before {
+                border-radius: 50px;
+                background: $theme-primary;
+            }
+        }
+    }
+}

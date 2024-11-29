@@ -1,0 +1,123 @@
+.header-1 .header__main-content-wrapper .header__main-right .user-login {
+    display: inline-flex!important;
+}
+
+.hero-one__content .hero-popular-search ul li {
+    margin-right: 8px;
+}
+
+.faq-two .faq-two__faq .accordion-item {
+    border: none;
+}
+
+.faq-two .faq-two__faq .accordion-item + .accordion-item {
+    margin-top: 14px;
+}
+
+.faq-two .faq-two__faq .accordion-header button {
+    outline: 0;
+    box-shadow: none;
+}
+
+.faq-three__faq .accordion-header button {
+    outline: 0;
+    box-shadow: none;
+}
+
+.faq-three__faq .accordion-item {
+    border: none;
+}
+
+.faq-three__faq .accordion-item + .accordion-item {
+    margin-top: 32px;
+}
+
+.faq-three__faq .accordion-header button:after {
+    display: none;
+}
+
+.faq-one__faq .accordion-item {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(11, 23, 40, 0.14);
+    border-radius: 6px;
+}
+
+.faq-one__faq .accordion-header button {
+    position: relative;
+    display: block;
+    border: none;
+    width: 100%;
+    color: #0B1728;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+    padding: 25px 20px 24px 30px;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+    background: rgba(255, 255, 255, 0);
+}
+
+.faq-one__faq .accordion-item + .accordion-item {
+    margin-top: 14px;
+}
+
+.faq-one__faq .accordion-header button:focus {
+    box-shadow: none;
+}
+
+.faq-one__faq .accordion-body {
+    color: #0B1728;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 0;
+    opacity: 0.7;
+    padding: 0px 96px 32px 30px;
+    margin-top: -4px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgba(11, 23, 40, 0.14);
+    background: rgba(255, 255, 255, 0);
+    border-radius: 0px 0px 6px 6px;
+}
+
+.faq-one__faq .accordion-header .accordion-button.collapsed:after {
+    content: "+";
+}
+
+.faq-one__faq .accordion-header .accordion-button::after {
+    content: "\f068";
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 900;
+    font-size: 13px;
+    color: #fff;
+    transform: rotate(0deg) translateY(-50%);
+    transition: all 500ms ease;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #0B1728;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.faq-one__faq .accordion-header .accordion-button:not(.collapsed)::after {
+    background-color: #4A5FE1;
+}
+
+.faq-one__faq .accordion-header .accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.faq-one__faq .accordion-header .accordion-button:not(.collapsed)::after,
+.faq-one__faq .accordion-header .accordion-button::after {
+    background-image: none;
+}
